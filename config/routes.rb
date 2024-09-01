@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
+  get '/feeds'                     => 'static_pages#feeds'
 
   namespace :api do
     # USERS
